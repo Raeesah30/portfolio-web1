@@ -7,7 +7,7 @@ const modalDesc = document.getElementById('data-desc');
 const flashcards = document.querySelectorAll('.flashcard');
 const closeBtn = document.querySelector('.close-btn');
 
-//Clickable card like flashcards
+//Clickable card like flashcards but in modal format
 flashcards.forEach(card => {
     card.addEventListener('click', () => {
         // Grab the info from the data attributes I made in HTML

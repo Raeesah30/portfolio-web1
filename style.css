@@ -118,9 +118,23 @@ min-height: 100vh
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
-.folder-icon{
-width: 65px;
-margin-bottom: 15px;
+
+
+.folder-icon {
+  width: 65px;
+  height: 65px; /* Ensure height is set for the mask to align */
+  margin-bottom: 15px;
+  
+  /* The shape/stencil */
+  -webkit-mask-image: url('Group 1.svg');
+  mask-image: url('Group 1.svg');
+  
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  
+  /* Ensure the mask fits the container */
+  mask-size: contain;
+  -webkit-mask-size: contain;
 }
 .tags span{
     font-size: 0.7rem;

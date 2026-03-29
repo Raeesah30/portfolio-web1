@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRG Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav>
         <div class="container nav-flex">
-            <a href="#aboutme" class="logo">Ra'eesah 🕊️</a>
-        <ul class="nav-links">
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#resume">Resume</a></li>
-        </ul>
+            <a href="#aboutme" class="logo">Ra'eesah</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#info">Blog & Resume</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
     <section id="aboutme" class="reveal">
         <div class="container grid-2">
-             <img src="finalaboutme.png" alt="Picture" class="pic">
-             <div class="aboutme-text">
-        <h2><p class="tagline">Second year SWE Student | Frontend Enthusiast</p></h2>
-        <p>Currently a software engineering student at the University of Technology, Mauritius, fascinated by the visual aspects of software development. I'm all about creativity and bringing ideas to life through colors and design.</p>
+            <img src="Chic 1 (1).png" alt="Picture" class="pic">
+            <div class="aboutme-text">
+                <h1 class="my-name">
+                    Bibi<br>
+                    Ra'eesah<br>
+                    Goolam Ossen
+                </h1>
+                <h2 class="tagline-professional">Software Engineering Student @ UTM, Mauritius | Frontend Enthusiast
+                </h2>
+                <div class="skill-chips">
+                    <span>Java</span>
+                    <span>SQL</span>
+                    <span>Html</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -34,78 +53,88 @@
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
 
-            <div class="flashcard"
-                data-title="AI-Powered Lacunar Stroke Detection System"
-                data-desc="A Flask web application using a Random Forest AI algorithm to predict and assess risk levels for lacunar stroke patients.">
-                <img src="Frame 1.svg" alt="Project 1" class="folder-icon">
-                <h3>AI-Powered Lacunar Stroke Detection System</h3>
-                <div class="tags"><span>Flask</span><span>Python</span><span>Machine Learning</span></div>
-            </div>
+                <div class="project-card">
+                    <img src="pinkfolderproject.jpg" alt="Project 1" class="folder-icon">
+                    <div class="project-info">
+                        <h3>AI-Powered Lacunar Stroke Detection System</h3>
+                        <div class="tags">
+                            <span>Flask</span><span>Python</span><span>Machine Learning</span>
+                        </div>
+                        <p>A Flask web application using a Random Forest AI algorithm to predict and assess risk levels
+                            for lacunar stroke patients.</p>
+                    </div>
+                </div>
 
-            <div class="flashcard"
-                data-title="SafeHer App"
-                data-desc="A safety-focused PWA featuring accelerometer-based shake detection and voice recognition to trigger instant emergency alerts with real-time GPS location sharing.">
-                <img src="SafeHerCover.png" alt="Project 2" class="folder-icon">
-                <h3>SafeHer App</h3>
-                <div class="tags"><span>PWA</span><span>Web API</span><span>JavaScript</span></div>
-            </div>
+                <div class="project-card">
+                    <img src="pinkfolderproject.jpg" alt="Project 2" class="folder-icon">
+                    <div class="project-info">
+                        <h3>SafeHer App</h3>
+                        <div class="tags">
+                            <span>PWA</span><span>Web API</span><span>JavaScript</span>
+                        </div>
+                        <p>A safety-focused PWA featuring accelerometer-based shake detection and voice recognition to
+                            trigger instant emergency alerts with real-time GPS location sharing.</p>
+                    </div>
+                </div>
 
-            <div class="flashcard"
-                data-title="So So Tacos Website"
-                data-desc="UI/UX mockup for a street food business featuring menu display, online ordering, user reviews and multilingual support.">
-                <img src="pinkfolderproject2.jpg" alt="Project 3" class="folder-icon">
-                <h3>So So Tacos Website</h3>
-                <div class="tags"><span>Figma</span></div>
+                <div class="project-card">
+                    <img src="pinkfolderproject.jpg" alt="Project 3" class="folder-icon">
+                    <div class="project-info">
+                        <h3>So So Tacos Website</h3>
+                        <div class="tags">
+                            <span>Figma</span>
+                        </div>
+                        <p>UI/UX mockup for a street food business featuring menu display, online ordering, user reviews
+                            and multilingual support.</p>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
     </section>
 
-
-    <div id="flashcard-flip" class="flashcard-flip">
-        <div class="flashcard-box">
-            <span class="close-btn">&times;</span>
-            <h3 id="data-title"></h3>
-            <p id="data-desc"></p>
-        </div>
-    </div>
-
-
-    <section id="blog">
+    <section id="info">
         <div class="container">
-        <h2 class="section-title">Events I attended</h2>
-        <div class="blog-posts">
-            <div class="blog-post reveal">
-            <div class="event-header">
-            <span class="type-tag">Conference</span>
-            <span class="date-tag">July 2024</span>
+            <div class="info-grid">
+
+                <div class="info-col">
+                    <h2 class="section-title dark">Events I Attended</h2>
+
+                    <div class="blog-post reveal">
+                        <div class="event-header">
+                            <span class="type-tag">Conference</span>
+                            <span class="date-tag">July 2024</span>
+                        </div>
+                        <h3>DevCon 2024 at Caudan Arts Centre</h3>
+                        <p>It was my first time attending a tech conference and I absolutely loved it! I used that
+                            opportunity to network with other professionals and learn about the latest trends in
+                            software development.</p>
+                    </div>
+
+                    <div class="blog-post reveal">
+                        <div class="event-header">
+                            <span class="type-tag">Conference</span>
+                            <span class="date-tag">October 2025</span>
+                        </div>
+                        <h3>DevFest 2025 at University of Mauritius</h3>
+                        <p>Attended 2 conference sessions based on Modern Mobile UI/UX Principles and Better Living via
+                            AI, and i had a genuine networking opportunity with a Senior Software Crafter.</p>
+                    </div>
+                </div>
+
+                <div class="info-divider"></div>
+
+                <div class="info-col">
+                    <h2 class="section-title dark">Resume</h2>
+                    <div class="resume-content">
+                        <h3>Bibi Ra'eesah Goolam Ossen</h3>
+                        <p><strong>Email:</strong> raeesahgoolamossen@gmail.com</p>
+                        <p class="skills-list"><strong>Skills:</strong> HTML, CSS, JavaScript, Java, Figma, SQL</p>
+                        <p>Download my resume here:<br><br>
+                            <a href="CV.pdf" class="download-link" target="_blank">Download Resume</a>
+                        </p>
+                    </div>
+                </div>
+
             </div>
-            <h3>DevCon 2024 at Caudan Arts Centre</h3>
-            <p>It was my first time attending a tech conference and I absolutely loved it! I used that opportunity to network with other professionals and learn about the latest trends in software development.</p>
-        </div>
-
-
-        <div class="blog-post reveal">
-            <div class="event-header">
-            <span class="type-tag">Conference</span>
-            <span class="date-tag">October 2025</span>
-            </div>
-            <h3>DevFest 2025 at University of Mauritius</h3>
-            <p>Attended 2 conference sessions based on my interests, there one conferene about Modern Mobile UI/UX Principles and the second one was about Better Living via AI without forgetting a genuine networking opportunity with a Senior Software Crafter.</p>
-        </div>
-        </div>
-    </section>
-
-
-    <section id="resume">
-        <div class="container">
-        <h2 class="section-title">Resume</h2>
-        <div class="resume-content">
-        <h3>Bibi Ra'eesah Goolam Ossen</h3>
-        <p><strong>Email: raeesahgoolamossen@gmail.com</strong></p>
-        <p>Download my resume here: <a href="CV.pdf" class="download-link" target="_blank">Download</a></p>
-        <p class="skills-list">Skills: HTML, CSS, JavaScript, Java, Figma, SQL</p>
-        </div>
         </div>
     </section>
 
@@ -116,4 +145,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

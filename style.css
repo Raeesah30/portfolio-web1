@@ -24,7 +24,8 @@ nav {
     padding: 20px 0;
     position: sticky;
     top: 0;
-    background: #0b033d;
+    background: white;
+    box-shadow: 0px 2px 5px 4px rgba(255, 255, 255, 0.2);
     z-index: 1000;
 }
 .nav-flex {
@@ -35,7 +36,7 @@ nav {
 .logo {
     font-family: "Georgia", "Times New Roman", serif;
     font-size: 1.4rem;
-    color: #ff93bc;
+    color: #0b033d;
     text-decoration: none;
     font-weight: bold;
 }
@@ -46,11 +47,11 @@ nav {
 }
 .nav-links a {
     text-decoration: none;
-    color: #ff93bc;
+    color: #0b033d;
     font-weight: 500;
     font-size: 0.9rem;
 }
-.nav-links a:hover { color: #ffffff; }
+.nav-links a:hover { color: #ff93bc; }
 
 .hamburger {
     display: none;
@@ -282,8 +283,8 @@ nav {
 }
  
 footer {
-    background: #0b033d;
-    color: #ff93bc;
+    background: white;
+    color: #0b033d;
     text-align: center;
     padding: 40px;
     font-size: 0.8rem;
